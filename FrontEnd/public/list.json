@@ -1,0 +1,42 @@
+[
+    {
+        "id":1,
+        "name":"Story Book",
+        "Title":"Whispers of the Forgotten City",
+        "price":0,
+        "catagory":"Free",
+        "image":"https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149330605.jpg?t=st=1727098104~exp=1727101704~hmac=7cad49d75806b0c065fbdcebd6ac12fd47977f6cd413f46f62568d28470549d8&w=740"
+    },
+    {
+        "id":2,
+        "name":"Movie Review Book",
+        "Title":"Whispers of the Forgotten City",
+        "price":0,
+        "catagory":"Free",
+        "image":"https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149330605.jpg?t=st=1727098104~exp=1727101704~hmac=7cad49d75806b0c065fbdcebd6ac12fd47977f6cd413f46f62568d28470549d8&w=740"
+    },
+    {
+        "id":3,
+        "name":"Java Tutorial",
+        "Title":"Whispers of the Forgotten City",
+        "price":0,
+        "catagory":"Free",
+        "image":"https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149330605.jpg?t=st=1727098104~exp=1727101704~hmac=7cad49d75806b0c065fbdcebd6ac12fd47977f6cd413f46f62568d28470549d8&w=740"
+    },
+    {
+        "id":4,
+        "name":"Comedy Book",
+        "Title":"Whispers of the Forgotten City",
+        "price":50,
+        "catagory":"Paid",
+        "image":"https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149330605.jpg?t=st=1727098104~exp=1727101704~hmac=7cad49d75806b0c065fbdcebd6ac12fd47977f6cd413f46f62568d28470549d8&w=740"
+    },
+    {
+        "id":5,
+        "name":"Music",
+        "Title":"Whispers of the Forgotten City",
+        "price":0,
+        "catagory":"Free",
+        "image":"https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149330605.jpg?t=st=1727098104~exp=1727101704~hmac=7cad49d75806b0c065fbdcebd6ac12fd47977f6cd413f46f62568d28470549d8&w=740"
+    }
+]
