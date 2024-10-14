@@ -1,7 +1,9 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, Navigate } from 'react-router-dom'
 import Login from './Login'
 import { useForm } from 'react-hook-form'
+import axios from "axios";
+import toast from 'react-hot-toast';
 
 
 
@@ -13,8 +15,28 @@ function SignUp() {
     formState: { errors },
   } = useForm()
   
-  const onSubmit=(data)=>console.log(data);
- 
+  const onSubmit=async (data)=>{
+    const userInfo={
+      userName:data.userName,
+      email:data.email,
+      password:data.password,
+    }
+ await axios.post("http://localhost:8080/user/signup",userInfo)
+ .then((res)=>{
+  console.log(res.data);
+  if(res.data){
+    toast.success('signup successfull');
+    <Navigate to="/"/>
+  }
+  localStorage.setItem("users",JSON.stringify(res.data.user));
+ }).catch((err)=>{
+  if(err.response){
+    console.log(err);
+      toast.success("error User already exits",+err.
+      response.data.message);
+  }
+ })
+};
 
   return (
    <>
@@ -42,9 +64,9 @@ function SignUp() {
            username
         </span>
         <br />
-        <input {...register("username", { required: true})} type="text" placeholder='Enter Your @username' className='w-80 px-3 py-1 border rounded-md outline-none'/>
+        <input {...register("userName", { required: true})} type="text" placeholder='Enter Your @username' className='w-80 px-3 py-1 border rounded-md outline-none'/>
         <br />
-        {errors.username && <span className='text-sm text-red-700'>This field is required</span>}
+        {errors.userName && <span className='text-sm text-red-700'>This field is required</span>}
     </div>
 
     <div  className='mt-6 space-y-3'>
