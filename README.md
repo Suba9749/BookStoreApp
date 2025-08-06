@@ -8,3 +8,5 @@ A simple and modern Book Store application built with React,node,express.js,mong
 - 🧾 View cart summary
 - 📘 Book details page
 -  💻 Responsive design
+-  using Technologys
+-  FrontEnd : Html,css,javascript,React,vue.js
